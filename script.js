@@ -11,8 +11,8 @@ function convertValues() {
 
     console.log(currencySelect.value)
 
-    const dolarToday = 5.2
-    const euRoToday = 6.2
+    const dolarToday = 5.15
+   
 
 
 
@@ -44,18 +44,24 @@ function convertValues() {
 }
 
 
-function changeCurrrency () {
-    const currencyName= document.getElementById ("currency-name")
+function changeCurrrency() {
+    const currencyName = document.getElementById("currency-name")
+    const currencyImage = document.querySelector(".currency-img")
+    
+
+
 }
 
-if ( currencySelect.Valur== "dolar") {
-    currencyName.innerHTML= " Dólar americano"
+if (currencySelect.Valur == "dolar") {
+    currencyName.innerHTML = " Dólar americano"
+    currencyImage.src="./assets/brazil.png"
 }
 
-if ( currencySelect.Valur== "euro") {
-    currencyName.innerHTML= " Euro"
+if (currencySelect.Valur == "euro") {
+    currencyName.innerHTML = " Euro"
+    currencyImage.src="./assets/Desig.png"
 }
 
 
-currencySelect.addEventListener ("change", changeCurrrency)
+currencySelect.addEventListener("change", changeCurrrency)
 oneButton.addEventListener("click", convertValues)
